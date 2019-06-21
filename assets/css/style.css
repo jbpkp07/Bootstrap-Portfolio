@@ -44,7 +44,7 @@ h1, h2, h3 {
 h1 {
   background: #4aaaa5;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
@@ -101,7 +101,7 @@ main {
 h2 {
   background: #ffffff;
   color: #4aaaa5;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   margin: 0;
   /* padding: 0px 15px 15px 0px; */
