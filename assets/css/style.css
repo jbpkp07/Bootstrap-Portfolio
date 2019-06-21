@@ -44,11 +44,20 @@ h1, h2, h3 {
 h1 {
   background: #4aaaa5;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 1;
   margin: 0;
   padding: 20px;
+}
+
+h2 {
+  background: #ffffff;
+  color: #4aaaa5;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  /* padding: 0px 15px 15px 0px; */
 }
 
 .nav-link {
@@ -78,34 +87,6 @@ main {
   /* margin-bottom: 100px; */
   margin-top: 40px;
   padding: 30px 30px 60px 30px;
-}
-
-/* Below media query is for a custom mobile (xs phone) presentation style changes
-   Rearrangement of elements is done via Bootstrap */
-@media only screen and (max-width: 575px) {
-  header {
-    background-color: #4aaaa5;
-  }
-
-  #navbarResponsive {
-    background: #cccccc;
-    text-align: center;
-  }
-
-  .containerMain {
-    border: 0px;
-    border-radius: 0px;
-    margin-top: 0px;
-  }
-}
-
-h2 {
-  background: #ffffff;
-  color: #4aaaa5;
-  font-size: 26px;
-  font-weight: bold;
-  margin: 0;
-  /* padding: 0px 15px 15px 0px; */
 }
 
 hr {
@@ -245,3 +226,32 @@ footer {
   position: relative;
   top: 15px;
 } */
+
+
+
+/* Below media query is for a custom mobile (xs phone) presentation style changes
+   Rearrangement of elements is done via Bootstrap */
+   @media only screen and (max-width: 575px) {
+    header {
+      background-color: #4aaaa5;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    #navbarResponsive {
+      background: #cccccc;
+      text-align: center;
+    }
+  
+    .containerMain {
+      border: 0px;
+      border-radius: 0px;
+      margin-top: 0px;
+    }
+  }
