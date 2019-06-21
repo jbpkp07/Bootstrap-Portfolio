@@ -68,13 +68,14 @@ h1 {
 main {
   max-width: 960px; 
   margin: 0 auto;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .containerMain {
   background: #ffffff;
   border: 4px solid #cccccc;
   border-radius: 25px;
+  margin-bottom: 100px;
   margin-top: 40px;
   padding: 30px;
 }
