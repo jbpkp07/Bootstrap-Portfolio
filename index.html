@@ -3,21 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>About: Jeremy Barnes</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+
+    <!-- Bootstrap Javascript references for navbar to toggle when screen is small (xs)-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
+    <header>
+        <div id="headerBox">
+            <nav class="navbar navbar-expand-sm navbar-light static-top p-0">
+                <div class="container p-0">
+                    <a class="navbar-brand p-0 mr-0" href="#">
+                        <h1>Jeremy Barnes</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-    </nav>
 
-    <div class="test" style="max-width: 960px; margin: 0 auto; margin-top: 30px;">
-        <div class="container p-5" style="background: blue; border-radius: 25px;">
+    <main>
+        <div class="container containerMain p-5">
             <div class="row">
                 <div class="col-lg-8">
                     <h1>About Me</h1>
@@ -62,10 +94,11 @@
 
             </div>
         </div>
-    </div>
+    <main>
 
 
 </body>
+
 
 </html>
 
