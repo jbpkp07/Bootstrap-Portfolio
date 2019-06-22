@@ -8,6 +8,10 @@
   display: block;
 } */
 
+#version:after {
+  content: "Bootstrap Portfolio v1.1";
+}
+
 body, html {
   color: #777777;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -29,7 +33,6 @@ body {
 header {
   background: #ffffff;
   border-bottom: 4px solid #cccccc;
-  /* overflow: auto; */
 }
 
 #headerBox {
@@ -96,6 +99,23 @@ hr {
 
 .placeholderBio {
   color: #CCCCCC;
+}
+
+.portfolioIMG {
+  /* float: left; */
+  /* margin: 20px 40px 20px 0px; */
+  max-width: 300px;
+  position: relative;
+}
+
+.imgOverlay {
+  background: #4aaaa5;
+  bottom: 15px;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 footer {

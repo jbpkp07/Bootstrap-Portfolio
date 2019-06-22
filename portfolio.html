@@ -2,100 +2,116 @@
 <html lang="en-us">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Portfolio: Jeremy Barnes</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+
+    <!-- Bootstrap Javascript references for navbar to toggle when screen is small (xs)-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
-    <div class="backgroundImage">
-        <header>
-            <div id="headerBox">
-                <div class="clearFixAfter">
 
-                    <h1>Jeremy Barnes</h1>
+    <header>
+        <div id="headerBox">
+            <nav class="navbar navbar-expand-sm navbar-light static-top p-0">
+                <div class="container p-0">
 
-                    <nav>
-                        <ul>
-                            <li> <a class="link about" href="./index.html"> About </a> </li>
-                            <li> <a class="link portfolio" href="#"> Portfolio </a> </li>
-                            <li> <a class="link contact" href="./contact.html"> Contact </a> </li>
+                    <a class="navbar-brand p-0 mr-0" href="./index.html">
+                        <h1>Jeremy Barnes</h1>
+                    </a>
+
+                    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto rounded">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">About</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
                         </ul>
-                    </nav>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container containerMain">
+
+            <div class="row">
+                <div class="col-md">
+                    <h2>Portfolio</h2>
+                    <hr>
                 </div>
             </div>
-        </header>
 
-
-
-        <div class="mytest col-lg-6  mx-auto mx-5 p-4">
-            <div class="w-75">
-                <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12">
                     <div class="row">
-                        <div class="col-lg-6 p-0">
+                        <div class="col-md-6 mb-5">
                             <div class="portfolioIMG">
-                                <img src="./assets/images/hangman.jpg" class="img-fluid" alt="Hang Man">
+                                <img src="./assets/images/hangman.jpg" class="img-fluid rounded" alt="Hang Man">
                                 <div class="imgOverlay">Hangman - Coming Soon!</div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 p-0">
+                        <div class="col-md-6 mb-5">
                             <div class="portfolioIMG">
-                                <img src="./assets/images/rpgGame.jpg" class="img-fluid" alt="RPG Game">
+                                <img src="./assets/images/rpgGame.jpg" class="img-fluid rounded" alt="RPG Game">
                                 <div class="imgOverlay">RPG Game - Coming Soon!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="portfolioIMG">
+                                <img src="./assets/images/triviaGame.jpg" class="img-fluid rounded" alt="Trivia Game">
+                                <div class="imgOverlay">Trivia Game - Coming Soon!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="portfolioIMG">
+                                <img src="./assets/images/infoWidget.jpg" class="img-fluid rounded" alt="Rutgers Info Widget">
+                                <div class="imgOverlay">Rutgers Info Widget - Coming Soon!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolioIMG">
+                                <img src="./assets/images/rockPaperScissors.jpg" class="img-fluid rounded" alt="Rock Paper Scissors">
+                                <div class="imgOverlay">Rock Paper Scissors - Coming Soon!</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </main>
 
+    <footer class="footer">
+        <div class="container-fluid mt-2">
+            <span id="version"></span>
+        </div>
+    </footer>
 
-
-        <!-- <main>
-            <h2>Portfolio</h2>
-
-            <hr>
-
-            <div class="clearFixAfter">
-                <div class="portfolioIMG">
-                    <img src="./assets/images/hangman.jpg" class="img-fluid" alt="Hang Man">
-                    <div class="imgOverlay">Hangman - Coming Soon!</div>
-                </div>
-
-                <div class="portfolioIMG">
-                    <img src="./assets/images/rpgGame.jpg" class="img-fluid" alt="RPG Game">
-                    <div class="imgOverlay">RPG Game - Coming Soon!</div>
-                </div>
-            </div>
-
-            <div class="clearFixAfter">
-                <div class="portfolioIMG">
-                    <img src="./assets/images/triviaGame.jpg" class="img-fluid" alt="Trivia Game">
-                    <div class="imgOverlay">Trivia Game - Coming Soon!</div>
-                </div>
-
-                <div class="portfolioIMG">
-                    <img src="./assets/images/infoWidget.jpg" class="img-fluid" alt="Rutgers Info Widget">
-                    <div class="imgOverlay">Rutgers Info Widget - Coming Soon!</div>
-                </div>
-            </div>
-
-            <div class="clearFixAfter">
-                <div class="portfolioIMG">
-                    <img src="./assets/images/rockPaperScissors.jpg" class="img-fluid" alt="Rock Paper Scissors">
-                    <div class="imgOverlay">Rock Paper Scissors - Coming Soon!</div>
-                </div>
-            </div>
-        </main> -->
-
-        <footer>
-            <h3 id="copyRight">Copyright ©</h3>
-        </footer>
-    </div>
 </body>
 
 </html>
