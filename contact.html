@@ -2,63 +2,119 @@
 <html lang="en-us">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Contact: Jeremy Barnes</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- Bootstrap Javascript references for navbar to toggle when screen is small (xs)-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
-    <div class="backgroundImage">
-        <header>
-            <div id="headerBox">
-                <div class="clearFixAfter">
 
-                    <h1>Jeremy Barnes</h1>
+    <header>
+        <div id="headerBox">
+            <nav class="navbar navbar-expand-sm navbar-light static-top p-0">
+                <div class="container p-0">
 
-                    <nav>
-                        <ul>
-                            <li> <a class="link about" href="./index.html"> About </a> </li>
-                            <li> <a class="link portfolio" href="./portfolio.html"> Portfolio </a> </li>
-                            <li> <a class="link contact" href="#"> Contact </a> </li>
+                    <a class="navbar-brand p-0 mr-0" href="./index.html">
+                        <h1>Jeremy Barnes</h1>
+                    </a>
+
+                    <button class="navbar-toggler mr-3" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
-                    </nav>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container containerMain">
+
+            <div class="row">
+                <div class="col-md">
+                    <h2>Contact</h2>
+                    <hr class="my-4">
                 </div>
             </div>
-        </header>
+            
+            <div class="input-group input-group-sm mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Name</span>
+                </div>
+                <input type="text" class="form-control" placeholder="First Last" name="fullname">
+            </div>
 
-        <main>
-            <h2>Contact</h2>
+            <div class="input-group input-group-sm mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                </div>
+                <input type="text" class="form-control" placeholder="example@email.com" name="email">
+            </div>
 
-            <hr>
+            <div class="input-group input-group-sm mb-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Message</span>
+                </div>
+                <textarea class="form-control" id="messageTextArea" aria-label="With textarea"
+                    placeholder="Hi Jeremy!"></textarea>
+            </div>
 
-            <label>Name</label>
-            <br>
-            <input type="text" placeholder="First Last">
+            <button type="submit" class="btn btn-sm btn-secondary float-right" data-toggle="modal" data-target="#emailSent">Submit</button>
 
-            <br><br>
+            <div class="modal fade" id="emailSent" tabindex="-1" role="dialog" aria-labelledby="emailSentModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="emailSentModalLabel">Message Sent</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            This does not actually send a message... Coming Soon!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <label>Email</label>
-            <br>
-            <input type="text" placeholder="example@gmail.com">
+        </div>
+    </main>
 
-            <br><br>
+    <footer class="footer">
+        <div class="container-fluid mt-2">
+            <span id="version"></span>
+        </div>
+    </footer>
 
-            <label>Message</label>
-            <br>
-            <textarea placeholder="Hi Jeremy!"></textarea>
-
-            <br><br>
-
-            <button id="submitBTN">Submit</button>
-
-        </main>
-
-        <footer>
-            <h3 id="copyRight">Copyright ©</h3>
-        </footer>
-    </div>
 </body>
 
 </html>

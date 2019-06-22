@@ -1,15 +1,5 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-/* .clearFixAfter::after {
-  clear: both;
-  content: "";
-  display: block;
-} */
-
 #version:after {
-  content: "Bootstrap Portfolio v1.1";
+  content: "Bootstrap Portfolio v1.2";
 }
 
 body, html {
@@ -60,7 +50,6 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   margin: 0;
-  /* padding: 0px 15px 15px 0px; */
 }
 
 .nav-link {
@@ -73,21 +62,15 @@ h2 {
   text-align: center;
 }
 
-.navbar-nav {
-  /* border: 1px solid rgba(0,0,0,.1);; */
-}
-
 main {
-  max-width: 960px; 
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
+  max-width: 960px;
 }
 
 .containerMain {
   background: #ffffff;
   border: 4px solid #cccccc;
   border-radius: 25px;
-  /* margin-bottom: 100px; */
   margin-top: 40px;
   padding: 30px 30px 60px 30px;
 }
@@ -97,13 +80,7 @@ hr {
   margin-bottom: 30px;
 }
 
-.placeholderBio {
-  color: #CCCCCC;
-}
-
 .portfolioIMG {
-  /* float: left; */
-  /* margin: 20px 40px 20px 0px; */
   max-width: 300px;
   position: relative;
 }
@@ -118,6 +95,30 @@ hr {
   width: 100%;
 }
 
+input {
+  height: 30px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+#messageTextArea {
+  height: 200px;
+}
+
+.input-group-text {
+  background: #4aaaa5;
+  color: #ffffff;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12pt;
+  width: 75px;
+}
+
+.btn {
+  background: #4aaaa5;
+  border: none;
+  width: 75px;
+}
+
 footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
@@ -129,153 +130,47 @@ footer {
   width: 100%;
 }
 
-
-
-/* nav {
-  float: right;
-  position: relative;
-  top: 30px;
-} */
-
-/* li {
-  display: inline-block;
-  list-style-type: none;
-} */
-
-/* .link {
-  font-weight: 700;
-  padding: 10px;
-} */
-
-/* .link:hover {
-  background: #DDDDDD;
-  border-radius: 25px;
-  color: #4aaaa5;
-} */
-
-/* ul:hover > li {
-  color: #DDDDDD;
-} */
-
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
-
-/* main {
-  background: #ffffff;
-  border: 3px solid #DDDDDD;
-  border-radius: 25px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  overflow: auto;
-  padding: 30px;
-  position: relative;
-  top: 40px;
-  width: 960px;
-} */
-
-/* img {
-  height: 200px;
-  width: 300px;
-} */
-
-/* #aboutMeIMG {
-  float: left;
-  height: 360px;
-  margin: 20px 30px 10px 0px;
-  width: 300px;
-} */
-
-/* .portfolioIMG {
-  float: left;
-  margin: 20px 40px 20px 0px;
-  position: relative;
-} */
-
-/* .imgOverlay {
-  background: #4aaaa5;
-  bottom: 15px;
-  color: #ffffff;
-  padding: 15px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-} */
-
-/* p {
-  line-height: 150%;
-  margin-top: 22px;
-} */
-
-/* label {
-  line-height: 2.0;
-} */
-
-/* input {
-  height: 30px;
-  padding-left: 10px;
-  width: 100%;
-} */
-
-/* textarea {
-  height: 200px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-} */
-
-/* ::placeholder, .placeholderBio {
+.placeholderBio {
   color: #CCCCCC;
-} */
-
-/* #submitBTN {
-  background: #4aaaa5;
-  border: none;
-  color: #ffffff;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 12pt;
-  height: 40px;
-  width: 120px;
-} */
+}
 
 
-
-/* #copyRight {
-  color: #cccccc;
-  position: relative;
-  top: 15px;
-} */
-
+/* For some reason the below form-contorls can't be combined into the same CSS block */
+.form-control::-webkit-input-placeholder { color: #CCCCCC;   }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #CCCCCC; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #CCCCCC; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #CCCCCC; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #CCCCCC; }  /* Microsoft Edge */
 
 
 /* Below media query is for a custom mobile (xs phone) presentation style changes
    Rearrangement of elements is done via Bootstrap */
-   @media only screen and (max-width: 575px) {
-    header {
-      background-color: #4aaaa5;
-    }
-  
-    body {
-      background: #ffffff;
-    }
-
-    h1 {
-      font-size: 24px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    #navbarResponsive {
-      background: #cccccc;
-      text-align: center;
-    }
-  
-    .containerMain {
-      border: 0px;
-      border-radius: 0px;
-      margin-top: 0px;
-    }
+@media only screen and (max-width: 575px) {
+  header {
+    background-color: #4aaaa5;
   }
+  
+  body {
+    background: #ffffff;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  #navbarResponsive {
+    background: #cccccc;
+    text-align: center;
+  }
+  
+  .containerMain {
+    border: 0;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 30px 15px 60px 15px;
+  }
+}
