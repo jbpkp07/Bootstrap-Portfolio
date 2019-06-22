@@ -1,5 +1,5 @@
 #version:after {
-  content: "Bootstrap Portfolio v1.2";
+  content: "Bootstrap Portfolio v1.2.1";
 }
 
 body, html {
@@ -171,6 +171,6 @@ footer {
     border: 0;
     border-radius: 0;
     margin-top: 0;
-    padding: 30px 15px 80px 15px;
+    padding: 30px 15px 120px 15px;
   }
 }
